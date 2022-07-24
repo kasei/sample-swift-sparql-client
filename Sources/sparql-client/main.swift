@@ -2,6 +2,7 @@ import Kineo
 import Foundation
 
 let sparql = """
+#Largest cities per country
 SELECT DISTINCT ?city ?cityLabel ?population ?country ?countryLabel ?loc WHERE {
   {
     SELECT (MAX(?population_) AS ?population) ?country WHERE {
